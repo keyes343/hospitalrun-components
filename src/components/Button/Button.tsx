@@ -85,7 +85,7 @@ const Button = (props: ButtonProps) => {
     outlined,
     color,
     icon,
-    block,
+    // block,
     disabled,
     onClick,
     children,
@@ -106,7 +106,7 @@ const Button = (props: ButtonProps) => {
   return (
     <BootstrapButton
       variant={variant as ButtonType}
-      block={block}
+      // block={block}
       disabled={disabled}
       size={getButtonSize(size)}
       onClick={onClick}

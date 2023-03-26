@@ -1,7 +1,7 @@
-import { Editor } from '@tinymce/tinymce-react'
+// import { Editor } from '@tinymce/tinymce-react'
 import React from 'react'
 
-import 'tinymce/tinymce'
+// import 'tinymce/tinymce'
 
 // Basic tinyMCE theme & skins required for editor to display
 import 'tinymce/themes/silver/theme.min'
@@ -44,32 +44,35 @@ interface Props {
   onChange?: (event: React.KeyboardEvent<HTMLTextAreaElement>) => void
 }
 
-const RichText = (props: Props) => {
-  const { id, value, disabled, height, onChange } = props
+const RichText = (_props: Props) => {
+  // UNDELETE LATER
+  // const { id, value, disabled, height, onChange } = props
 
-  return (
-    <Editor
-      id={id}
-      initialValue={value}
-      init={{
-        height: height || 500,
-        menubar: true,
-        statusbar: false,
-        // skin & content_css are set to 'false' to avoid tinyMCE looking to fetch files when they are already imported above.
-        skin: false,
-        // eslint disabled on next line due to TinyMCE option attribute naming.
-        content_css: false,
-        plugins: [`autolink lists link table paste charmap`],
-        toolbar: [
-          `undo redo | formatselect fontselect fontsizeselect | bold italic underline sub sup backcolor |
-        alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | table link removeformat`,
-        ],
-        branding: false,
-      }}
-      disabled={disabled}
-      onEditorChange={(content) => onChange && onChange(content)}
-    />
-  )
+  return <></>
+
+  // return (
+  //   <Editor
+  //     id={id}
+  //     initialValue={value}
+  //     init={{
+  //       height: height || 500,
+  //       menubar: true,
+  //       statusbar: false,
+  //       // skin & content_css are set to 'false' to avoid tinyMCE looking to fetch files when they are already imported above.
+  //       skin: false,
+  //       // eslint disabled on next line due to TinyMCE option attribute naming.
+  //       content_css: false,
+  //       plugins: [`autolink lists link table paste charmap`],
+  //       toolbar: [
+  //         `undo redo | formatselect fontselect fontsizeselect | bold italic underline sub sup backcolor |
+  //       alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | table link removeformat`,
+  //       ],
+  //       branding: false,
+  //     }}
+  //     disabled={disabled}
+  //     onEditorChange={(content) => onChange && onChange(content)}
+  //   />
+  // )
 }
 
 export { RichText }

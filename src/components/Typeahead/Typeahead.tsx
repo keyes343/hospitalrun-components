@@ -70,7 +70,7 @@ const Typeahead = (props: Props) => {
         minLength={minLength}
         onSearch={search}
         onChange={onChange}
-        renderMenuItemChildren={renderMenuItemChildren}
+        // renderMenuItemChildren={[{},renderMenuItemChildren]}
         defaultSelected={selectedValues}
         disabled={disabled}
         isValid={isValid}

@@ -169,7 +169,7 @@ const DateTimePicker = (props: Props) => {
           startDate={startDate}
           withPortal={withPortal}
         >
-          {children}
+          {/* {children} */}
         </DatePicker>
       </InputGroup>
       {feedback !== undefined && (

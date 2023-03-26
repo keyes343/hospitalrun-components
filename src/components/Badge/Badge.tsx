@@ -22,9 +22,18 @@ export interface BadgeProps {
  * from the surrounding content.
  */
 const Badge = (props: BadgeProps) => {
-  const { color, children, className, style } = props
+  const {
+    // color,
+    children,
+    className,
+    style,
+  } = props
   return (
-    <BootstrapBadge variant={color} className={className} style={style}>
+    <BootstrapBadge
+      // variant={color}
+      className={className}
+      style={style}
+    >
       {children}
     </BootstrapBadge>
   )

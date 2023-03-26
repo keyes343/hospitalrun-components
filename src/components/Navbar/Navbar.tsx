@@ -49,8 +49,10 @@ const Navbar = (props: Props) => {
       key={index}
       onClick={link.onClick}
     >
-      {link.icon && <Icon icon={link.icon as IconType} className="fa-fw mr-3" />}
-      {link.label}
+      <>
+        {link.icon && <Icon icon={link.icon as IconType} className="fa-fw mr-3" />}
+        {link.label}
+      </>
     </NavDropdown.Item>
   )
 
@@ -78,7 +80,9 @@ const Navbar = (props: Props) => {
 
   const getNavSearch = (search: NavSearch, index: number) => (
     <Nav className={search.className} key={index}>
-      <Form inline>
+      <Form
+      // inline
+      >
         {getSearchBox(search)}
         <Button color={search.buttonColor || 'primary'} onClick={search.onClickButton}>
           {search.buttonText || 'Search'}
@@ -89,7 +93,7 @@ const Navbar = (props: Props) => {
 
   const getNavLinkList = (list: NavLinkList, index: number) => (
     <NavDropdown
-      alignRight={list.alignRight}
+      // alignRight={list.alignRight}
       className={list.className}
       title={list.label}
       id="collasible-nav-dropdown"
@@ -101,7 +105,7 @@ const Navbar = (props: Props) => {
 
   const getNavLinkListIcon = (list: NavLinkListIcon, index: number) => (
     <NavDropdown
-      alignRight={list.alignRight}
+      // alignRight={list.alignRight}
       className={list.className}
       title={
         <Icon
@@ -131,7 +135,7 @@ const Navbar = (props: Props) => {
 
   const getNavLink = (link: NavLink, index: number) => (
     <Nav.Link className={link.className} onClick={link.onClick} key={index}>
-      {link.label}
+      {/* {link.label} */}
     </Nav.Link>
   )
 

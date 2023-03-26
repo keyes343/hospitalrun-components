@@ -35,11 +35,6 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook"
   },
-  "peerDependencies": {
-    "bootstrap": "~5.1.0",
-    "react": "~16.14.0",
-    "react-bootstrap": "~1.0.1"
-  },
   "husky": {
     "hooks": {
       "commit-msg": "npm run commitlint -- -E HUSKY_GIT_PARAMS",
@@ -116,12 +111,12 @@
     "node-sass": "~4.14.1",
     "prettier": "~2.2.0",
     "react": "~16.14.0",
-    "react-bootstrap": "~1.0.0-beta.16",
+    "react-bootstrap": "~1.6.6",
     "react-docgen": "~5.4.0",
     "react-docgen-typescript-loader": "~3.7.0",
     "react-dom": "~16.14.0",
     "react-is": "~17.0.1",
-    "rollup-plugin-postcss": "~4.0.0",
+    "rollup-plugin-postcss": "~4.0.2",
     "sass-loader": "~10.2.0",
     "semantic-release": "~18.0.0",
     "sinon": "~11.1.0",
@@ -150,12 +145,13 @@
     "formik": "~2.2.0",
     "lodash": "~4.17.19",
     "moment": "~2.29.0",
+    "postcss": "~8.0.0",
     "react-bootstrap-typeahead": "^4.2.3",
     "react-datepicker": "~4.3.0",
     "react-spinners": "~0.11.0",
     "react-table": "~7.7.0",
-    "react-toastify": "~5.5.0",
-    "tinymce": "~5.9.2",
+    "react-toastify": "~9.1.2",
+    "tinymce": "~5.4.1",
     "video-react": "~0.14.1"
   },
   "jest": {
